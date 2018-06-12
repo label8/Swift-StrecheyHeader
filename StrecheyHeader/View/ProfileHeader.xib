@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileHeader" customModule="StrecheyHeader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="212"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_image" translatesAutoresizingMaskIntoConstraints="NO" id="wdx-wI-cLR">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="212"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_icon" translatesAutoresizingMaskIntoConstraints="NO" id="0zd-ny-naN">
+                    <rect key="frame" x="20" y="92" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="kcU-6I-CO4"/>
+                        <constraint firstAttribute="width" constant="100" id="uhL-wi-wD9"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wdx-wI-cLR" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Bv2-gh-5By"/>
+                <constraint firstItem="wdx-wI-cLR" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="MlK-Gc-1lI"/>
+                <constraint firstItem="0zd-ny-naN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Sbh-gH-rlR"/>
+                <constraint firstItem="wdx-wI-cLR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Vdk-Ea-x9f"/>
+                <constraint firstItem="wdx-wI-cLR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Ycb-eJ-hsg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0zd-ny-naN" secondAttribute="bottom" constant="20" id="r9o-3R-PXf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-11" y="-178"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="header_image" width="307" height="205"/>
+        <image name="user_icon" width="548" height="610"/>
+    </resources>
+</document>
